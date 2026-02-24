@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Presentation Perfex
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Presentation Perfex** is an AI-powered web application designed to help users practice and improve their public speaking and presentation skills. By uploading a video of a presentation, users receive detailed, automated feedback on their body language, facial expressions, and voice modulation.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Project Overview
 
-### `npm start`
+The goal of Presentation Perfex is to provide individuals with a tool to overcome the nervousness and uncertainty associated with public speaking. The platform allows users to rehearse in a private, supportive environment and receive constructive, data-driven insights to build confidence and enhance their performance.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The system analyzes uploaded videos using machine learning algorithms and provides feedback on:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Facial Expressions**: Identifies dominant emotions (e.g., happy, neutral, surprised) and eye contact.
+- **Body Language**: Assesses posture and gestures (e.g., straight body, crossed arms, hand-to-face movements).
+- **Voice Modulation**: Analyzes speaking speed, identifies repeated words, and provides a full transcript.
 
-### `npm test`
+Users can track their progress over time, share videos with a community for additional feedback, and download transcripts of their speech.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ✨ Key Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **AI-Powered Video Analysis**: Upload presentation videos (up to 3 minutes) for automated analysis.
+- **Multi-Level Feedback**: Receive individual scores and insights for face, body, and voice.
+- **Transcript Generation**: Get a word-for-word transcript of the speech, downloadable as a PDF.
+- **Progress Tracking**: Compare current performance with past presentations to monitor improvement.
+- **Community Feedback**: Share videos with other users to receive constructive comments and support.
+- **Word Generator**: A tool to generate random words to help create engaging and dynamic presentation content.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Technology Stack
 
-### `npm run eject`
+### Backend & APIs
+- **FastAPI**: Manages video uploads, processes data, and provides feedback to the frontend. Its high performance and asynchronous capabilities ensure a seamless user experience.
+- **Node.js**: Provides the runtime environment for building scalable network applications.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Machine Learning & AI
+- **TensorFlow**: Open-source framework used to build and train deep learning models, including CNNs for facial expression analysis.
+- **OpenCV**: Computer vision library utilized for real-time image and video processing, specifically for face detection and body language analysis.
+- **MediaPipe**: Used for analyzing body language cues, including pose and gesture recognition to assess speaker movements.
+- **OpenAI Whisper**: Employed for accurate speech-to-text transcription and voice modulation analysis.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Frontend
+- **React**: JavaScript library for building the user-friendly and responsive interface.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Database
+- **MongoDB**: NoSQL database used for flexibility in handling unstructured data like user profiles, video metadata, and feedback records.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## ⚙️ System Requirements
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Functional Requirements
+- **User Authentication**: Users must log in or create an account to use the platform.
+- **Video Length**: Videos are limited to a maximum of 3 minutes.
+- **Video Framing**: Users must ensure their head and shoulders (upper body) are clearly visible for accurate analysis.
+- **Analysis**: The system must analyze facial expressions, body language, and voice intonation.
+- **Output**: The platform must generate instant feedback and provide a downloadable PDF transcript.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Non-Functional Requirements
+- **Performance**: Handle multiple concurrent users without significant performance loss.
+- **Scalability**: Scale seamlessly as the user base grows.
+- **Reliability**: Platform must be available and reliable with minimal downtime.
+- **Security**: Robust security measures to protect all user data.
+- **Compatibility**: Compatible with major web browsers and common video formats (e.g., MP4).
+- **Usability**: User-friendly interface accessible to individuals with varying technical expertise.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📊 Project Scope
 
-### Analyzing the Bundle Size
+- **Target Audience**: Students, professionals, public speakers, trainers, and educators looking to improve their presentation skills.
+- **Deliverables**: A fully functional web application accessible on desktop and mobile devices, complete with user guides and comprehensive feedback reports.
+- **Exclusions**: Tools for creating presentation slides, personalized human coaching, or full-body analysis.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🧪 Testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Unit Testing**: Individual functions and methods were tested to ensure they perform as designed.
+- **Integration Testing**: Verified interactions between integrated components such as AI modules, database, and UI.
+- **System Testing**: Complete end-to-end testing of the website to ensure all components work together as expected.
+- **User Acceptance Testing (UAT)**: Real users tested registration, video upload, and feedback to ensure it meets real-world requirements.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🔭 Future Work
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Improve the overall quality of the user interface design.
+- Enhance the underlying code structure for better maintainability.
+- Expand website functionality with new features.
+- Continuously improve website requirements based on user feedback.
+- Strengthen system security protocols.
